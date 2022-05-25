@@ -1,0 +1,180 @@
+thead input {
+    width: 100%;
+}
+
+
+.logo{
+    width:146px;
+    margin-left:21px;
+    margin-bottom:5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:20px
+}
+
+body{
+    background:url("https://wallpapercave.com/wp/wp4063163.jpg")
+}
+
+#wrapper{
+    height: 100vh;
+}
+
+table, .filters th input, .dataTables_length select option{
+    color:black;
+    zoom:1.1!important
+}
+
+.sorting{
+    color:white!important;
+    font-size:12px!important
+}
+
+#load_filter, #load_filter input{
+    color:white!important
+}
+.dataTables_info, .dataTables_length, .dataTables_length select {
+    color:black!important
+}
+
+#slipModal .dataTables_length, #slipModal .dataTables_length select,  #slipModal #load_filter, #slipModal #load_filter input{
+    color:black!important
+}
+
+#slips thead{
+    background:black
+}
+
+.modal-dialog{
+    width:80%!important
+}
+
+.plusIcon{
+    width: 13px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    cursor:pointer
+}
+
+.activeSlip{
+    border:1px solid #f8cbad
+}
+
+#slipMiniTable tbody tr {
+    background-color: #3a3838!important;
+    color:white
+}
+
+#slipMiniTable tr:nth-of-type(odd), #slipMiniTable .uk-table-striped>tr:nth-of-type(odd){
+    background: #595959!important;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#slipMiniTable thead tr:first-of-type{
+    background:#f8cbad!important;
+}
+
+#slipMiniTable thead tr:first-of-type th{
+    color:black!important;
+    font-size:13ox!important
+}
+
+#slipMiniTable thead tr{
+    color:white!important;
+    height:21px
+}
+
+.filter-icon{
+    background-image: url(img/sportovi.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 21px;
+    left: 4px;
+    position: relative;
+    top: 4px;
+    transition: all 0.3s ease-out 0s;
+    width: 38px;
+    zoom:0.7
+}
+
+.fudbal{
+    background-position: 0 0;
+}
+
+.kosarka{
+    background-position: 0 -20px;
+}
+
+.tenis{
+    background-position: 0 -41px;
+}
+
+.rukomet{
+    background-position: 0 -150px;
+}
+
+.odbojka{
+    background-position: 0 -62px;
+}
+
+.hokej{
+    background-position: 0 -84px;
+}
+
+.golovi-u-ligi, .borilacke-vestine, .snuker{
+    background-position: -1px -1157px;
+}
+
+.igraci-specijal{
+    background-position: 0 -1652px;
+}
+
+.futsal{
+    background-position: 8px;
+    background-image: url(img/futsal.png);
+}
+
+.mec-specijal{
+    background-position: 0 -1805px;
+}
+
+.stoni-tenis{
+    background-position: 8px;
+    background-image: url(img/tabletennis.png);
+}
+
+.pikado{
+    background-position: 8px;
+    background-image: url(img/pikado.png);
+}
+
+#lastChange{
+    margin-top:10px;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.treptanje {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .sistemski{
+      margin-left:21px;
+      color:white;
+      font-style: italic;
+  }
+
+
+
+

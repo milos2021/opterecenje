@@ -1,0 +1,433 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('./fonts/Montserrat/Montserrat.ttf');
+}
+@font-face {
+    font-family: Arimo;
+    src: url('./fonts/Arimo/Arimo.ttf');
+}
+#load .odd:hover, #load .even:hover{
+    background-color: #c5c5c5!important;
+    transition-duration: 0.3s;
+ }
+ /*
+.pagination{
+    border:none!important;
+    display: inline-block!important;
+    outline: none!important;
+    border-radius: 0px;
+}
+#load_next{
+    visibility: hidden;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color: #38423a!important;
+    border:none!important;
+    outline: none!important;
+    text-align: center;
+} */
+#load thead tr th{
+    color: #555!important
+}
+#load{
+    margin-right: 0px;
+    margin-left:0px
+}
+#load tr th::before, #load tr th::after{
+    opacity: 1!important;
+    background: url('../img/sort_both.png') no-repeat center right;
+}
+#matches thead{
+    border-bottom: 5px solid black!important;
+}
+.fg-button.ui-button.ui-state-default.next{
+    /* display: none!important; */
+}
+#matches_next{
+    /* display: none!important; */
+}
+.pagination>li {
+    display: inherit!important;
+}
+#matches tbody tr td{
+    height:5px!important;
+    padding-top:5px;
+    padding-bottom: 5px;
+   
+}
+.matchCol, .oddsCol{
+    overflow: hidden;
+    max-width:70px!important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+}
+.sportCol{
+    overflow: hidden;
+    max-width:20px!important;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+}
+.betsTot, .betsDirect{
+    max-width:60px!important;
+
+}
+
+.matchId{
+    max-width:42px!important;
+    display: none;
+}
+.row{
+    width:100%;
+    margin-left:0px!important;
+}
+.outcome{
+    max-width:86px!important;
+    padding-left:0px!important;
+    padding-right:0px!important;
+
+    margin-left:0px!important
+
+}
+/* table, .col-md-5{
+    width:30%!important
+}
+thead input {
+    width: 100%;
+}
+.col-md-7, #load{
+    width:500px!important;
+} */
+.logo{
+    width:200px;
+    margin-bottom:13px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:20px;
+    margin-left:30px;
+}
+table{
+    /* zoom: normal */
+}
+body{
+    background: rgb(13,13,13);
+    background: linear-gradient(0deg, rgba(13,13,13,1) 0%, rgba(47,47,47,1) 35%, rgba(41,41,41,1) 81%, rgba(0,0,0,1) 100%);
+}
+#wrapper{
+    height: 100vh ;
+
+}
+
+table, .filters th input, .dataTables_length select option{
+    color:black;
+    zoom:1!important
+}
+
+.sorting{
+    color:white!important;
+    font-size:12px!important
+}
+
+#load_filter, #load_filter input{
+    color:white!important
+}
+.dataTables_info, .dataTables_length, .dataTables_length select {
+    color:black!important
+}
+
+#slipModal .dataTables_length, #slipModal .dataTables_length select,  #slipModal #load_filter, #slipModal #load_filter input{
+    color:black!important
+}
+
+#slips thead{
+    background:black
+}
+
+.modal-dialog{
+    width:80%!important
+}
+
+.plusIcon{
+    width: 13px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    cursor:pointer
+}
+
+.activeSlip{
+    border:1px solid #f8cbad
+}
+
+#slipMiniTable tbody tr {
+    background-color: #3a3838!important;
+    color:white
+}
+
+#slipMiniTable tr:nth-of-type(odd), #slipMiniTable .uk-table-striped>tr:nth-of-type(odd){
+    background: #595959!important;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#slipMiniTable thead tr:first-of-type{
+    background:#f8cbad!important;
+}
+
+#slipMiniTable thead tr:first-of-type th{
+    color:black!important;
+    font-size:13px!important
+}
+
+#slipMiniTable thead tr{
+    color:white!important;
+    height:21px
+}
+#matches .secondRow{
+    border-bottom:2px solid #1a1a1a!important
+}
+.filter-icon{
+    background-image: url(../img/sportovi.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 21px;
+    left: 4px;
+    position: relative;
+    top: 4px;
+    transition: all 0.3s ease-out 0s;
+    width: 38px;
+    zoom:0.7
+}
+
+.fudbal{
+    background-position: 0 0;
+}
+
+.kosarka{
+    background-position: 0 -20px;
+}
+
+.tenis{
+    background-position: 0 -41px;
+}
+
+.rukomet{
+    background-position: 0 -150px;
+}
+
+.odbojka{
+    background-position: 0 -62px;
+}
+
+.hokej{
+    background-position: 0 -84px;
+}
+
+.golovi-u-ligi, .borilacke-vestine, .snuker{
+    background-position: -1px -1157px;
+}
+
+.igraci-specijal{
+    background-position: 0 -1652px;
+}
+
+.futsal{
+    background-position: 8px;
+    background-image: url(../img/futsal.png);
+}
+
+.mec-specijal{
+    background-position: 0 -1805px;
+}
+
+.stoni-tenis{
+    background-position: 8px;
+    background-image: url(../img/tabletennis.png);
+}
+
+.pikado{
+    background-position: 8px;
+    background-image: url(../img/pikado.png);
+}
+
+#lastChange{
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 1.2px;
+    
+    padding-top:15px!important;
+
+
+}
+
+.homeTeam{
+     max-width: 120px!important;
+     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.dataTables_filter {
+    display: none;
+    }
+
+    .dataTables_length{
+        color:white!important
+    }
+    .dataTables_length select{
+        color:white!important
+    }
+
+.treptanje {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .sistemski{
+      padding-right:30px;
+      color:white;
+      font-style: italic;
+      font-family: 'Courier New', Courier, monospace;
+      font-size:15px;
+      padding-top:10px!important;
+
+  }
+
+ .dataTables_info{
+     /* float:right!important; */
+    
+ }
+
+ /* #matches_paginate{
+    position: sticky;
+    left: 0%;
+ } */
+
+
+  @media (min-width: 992px){
+      .col-md-6{ 
+          width: 50%!important;
+          padding-right:0px!important;
+                }
+    .col-md-7{
+        width:60%!important;
+        padding-right:20px!important;
+
+        
+    }
+
+
+
+
+  }
+
+  .dataTables_info{
+    color:white!important;
+    /* padding:0px;
+    position:absolute;
+    left:26%;
+*/
+} 
+
+#zaglavlje{
+    display: flex;
+    justify-content: space-between;
+
+}
+table.dataTable thead th{
+    padding-right:30px!important;
+    padding-left: 5px!important;
+}
+#load thead th{
+    font-size:12px!important;
+}
+#matches thead th{
+    text-transform: uppercase;
+    font-size:12px!important;
+
+}
+
+#yadcf-filter--load-4{
+    width:80px!important
+}
+
+.nums{
+}
+
+.outcomes, .odds {
+    width: 30px!important;
+}
+
+.select2-container.yadcf-filter a{
+    /* width:100%!important; */
+    font-size:10px;
+    margin:0px auto!important;
+    padding:0px!important;
+   
+
+
+}
+
+
+.sorting_disabled.ui-state-default{
+    text-align: center!important;
+    /* margin-bottom:20px!important; */
+}
+.rowDetails{
+    /* max-width: 40px!important; */
+}
+.yadcf-filter-wrapper{
+    margin:0px auto!important;
+}
+#yadcf-filter--load-4-reset{
+    position: absolute!important;
+    z-index: 99!important;
+    top:8px;
+    left:382px
+}
+#yadcf-filter--load-3-reset{
+    position: absolute!important;
+    z-index: 99!important;
+    top:8px;
+    
+    left:232px
+}
+
+#yadcf-filter-wrapper--load-3 .select2-container{
+   width:140px;
+   max-width:140px;
+}
+
+.yadcf-filter.select2-offscreen.inuse{
+    overflow: hidden;
+    max-width: 60px!important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.sorting.ui-state-default, .sorting_disabled.ui-state-default{
+    color:black!important;
+
+}
+.sorting_disabled.ui-state-default{
+    font-size:12px
+}
+.ui-state-default{
+    text-transform: uppercase;
+    font-size:12px
+
+}
+
+.pretraga{
+    width:200px!important
+}

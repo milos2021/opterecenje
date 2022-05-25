@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prematch Load Lite</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="loading.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.2/css/fixedHeader.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.uikit.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <div  id="loader"></div>
+  <img src="logo.png" class="logo" />
+  <p id="lastChange"></p>
+  <p class="sistemski">(Sistemski tiketi nisu uključeni u opterećenje)</p>
+  <div id="wrapper">
+    <table id="load" class="uk-table uk-table-hover uk-table-striped" style="width:100%">
+      <thead>
+        <tr>
+          <th>Start</th>
+          <th>Match ID</th>
+          <th>Sport</th>
+          <th>Home Team</th>
+          <th>Away Team</th>
+          <th>Outcome</th>
+          <th>#Bets Tot Imp</th>
+          <th>ΣBet Tot Imp</th>
+          <th>#Bets Direct Imp</th>
+          <th>ΣBet Dir Imp</th>
+          <th>ΣWin Dir Imp</th>
+          <th>Avg Odd</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="slipModal" tabindex="-1" role="dialog" aria-labelledby="slipModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="slipModalLabel">Slips</h4>
+        </div>
+        <div class="modal-body">
+          <table id="slips" class="uk-table uk-table-hover uk-table-striped" style="width:100%">
+            <thead>
+              <tr>
+                <th>Slip ID</th>
+                <th>DateTime</th>
+                <th>Username</th>
+                <th>#Lines</th>
+                <th>ΣBet</th>
+                <th>Total Odd</th>
+                <th>ΣWin</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/fixedheader/3.2.2/js/dataTables.fixedHeader.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
